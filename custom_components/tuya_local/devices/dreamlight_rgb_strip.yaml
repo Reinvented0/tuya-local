@@ -20,6 +20,9 @@ products:
   - id: bt9wz6d66rehbqne
     manufacturer: LSC Smart Connect
     model: Outdoor 3M Neon strip
+  - id: dmcfgsj8dihmc2gd
+    manufacturer: Lam(MS)pen
+    model: 24V RGB COB strip
 entities:
   - entity: light
     dps:
@@ -195,6 +198,26 @@ entities:
             value: "Summer wind"
           - dps_val: "AToCXV3gAABNALReARxkAOhJAMZf"
             value: "Planet journey"
+  - entity: text
+    name: Scene data
+    category: config
+    icon: "mdi:palette"
+    hidden: true
+    dps:
+      - id: 25
+        type: string
+        optional: true
+        name: value
+  - entity: text
+    name: Control data
+    category: config
+    icon: "mdi:tune"
+    hidden: true
+    dps:
+      - id: 28
+        type: string
+        optional: true
+        name: value
   - entity: text
     name: Music
     category: config
